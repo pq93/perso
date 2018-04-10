@@ -14,7 +14,7 @@ A **web crawler**, sometimes called a **spider**, is an Internet bot that system
 4. Copy and save the information if performing archiving of websites.
 
 ## 4. Crawling Policies
-1. Selection policy: states the pages to download
-2. Re-visit policy: states when to check for changes to the pages
-3. Politeness policy: states how to avoid overloading websites
-4. Parallelization policy: states how to coordinate distributed web crawlers
+1. **Selection policy**: states the pages to download
+2. **Re-visit policy**: states when to check for changes to the pages
+3. **Politeness policy**: states how to avoid overloading websites
+4. **Parallelization policy**: states how to coordinate distributed web crawlers
