@@ -1,5 +1,5 @@
-# 
-1. Web Crawler by Python
+# Perso
+1. Web Crawler by Python https://www.zhihu.com/question/20899988
     1. Principles
     2. http抓取工具scrapy
     3. Bloom Filter
