@@ -18,4 +18,43 @@ soup = BeautifulSoup(html)
 
 # Reorganize html code
 soup.prettify()
-print(soup)
+#print(soup)
+
+'''
+# Get the file title
+print(soup.title)
+
+# Get the title's name value
+print(soup.title.name)
+
+# Get the title's string value
+print(soup.title.string)
+
+# Get the name of title's parent (upper level)
+print(soup.title.parent.name)
+
+# Get the 1st paragraph found
+print(soup.p)
+
+# Get the attribut of the 1st paragraph
+#print(soup.p['class'])
+print(soup.p['style'])
+
+# Get the 1st tag 'a'
+print(soup.a)
+
+# Get all tags 'a'
+print(soup.find_all('a'))
+
+# Get the tag whose id = "gb_70"
+print(soup.find(id="gb_70"))
+'''
+
+# Get all links
+for link in soup.find_all('a'):
+  print(link.get('href'))
+
+'''
+# Get all texts
+print(soup.get_text())
+'''
