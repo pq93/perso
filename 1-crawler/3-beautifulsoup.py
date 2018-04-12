@@ -1,5 +1,6 @@
 import requests # learn more: https://python.org/pypi/requests
-
+import bs4 # learn more: https://python.org/pypi/bs4
+import lxml # learn more: https://python.org/pypi/lxml
 from bs4 import BeautifulSoup # learn more: https://python.org/pypi/BeautifulSoup
 
 def getHtmlText(url):
@@ -14,7 +15,8 @@ def getHtmlText(url):
     return "Something wrong"
 html = getHtmlText("https://www.google.fr")
 
-soup = BeautifulSoup(html)
+soup = bs4.BeautifulSoup(html,'lxml')
+#soup = BeautifulSoup(html)
 
 # Reorganize html code
 soup.prettify()
