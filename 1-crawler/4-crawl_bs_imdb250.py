@@ -28,8 +28,9 @@ def getContent(url):
     # Get the movies' name
     mv_nm = soup.find_all('td',class_='titleColumn')
     for nm in mv_nm:
-        print(nm.a.contents)
+        nm = nm.a.contents[0]
+        nm_fr = unicode(nm).encode('utf-8')
+        print(nm_fr)
     # Get the movies' year
-
 
 getContent("http://www.imdb.com/chart/top")
