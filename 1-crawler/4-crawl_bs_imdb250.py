@@ -23,42 +23,49 @@ def getContent(url):
     html = getHtml(url)
     soup = bs4.BeautifulSoup(html,'lxml')
     #soup = soup.prettify()
-    
+
     # Get the movies' rank
-    mv_rk = soup.find_all('span',{'name':'rk'})
+    rank_list = soup.find_all('span',{'name':'rk'})
     rank = np.array([],dtype='int')
-    for rk in mv_rk:
-        rank = np.append(rank,rk['data-value'])
-    
-    
-    # Get the movies' name
-    mv_nm = soup.find_all('td',class_='titleColumn')
-    name = np.array([])
-    for nm in mv_nm:
-        nm = nm.a.contents[0]
-        #nm_fr = unicode(nm).encode('utf-8')
-        name = np.append(name,nm)
-    
+    for rk in rank_list:
+        rk = int(rk['data-value'])
+        rank = np.append(rank,rk)
+
+    # Get the movies' title
+    title_list = soup.find_all('td',class_='titleColumn')
+    title = np.array([])
+    for tl in title_list:
+        tl = tl.a.contents[0]
+        tl_fr = unicode(tl).encode('utf-8')
+        tl_fr = str(tl_fr)
+        title = np.append(title,tl_fr)
+
     # Get the movies' year
-    mv_yr = soup.find_all('span',class_='secondaryInfo')
-    year = np.array([],dtype='int')
-    for yr in mv_yr:
-        year = np.append(year,yr.contents[0][1:5])
-    
+    year_list = soup.find_all('span',class_='secondaryInfo')
+    year = np.array([],dtype='int32')
+    for yr in year_list:
+        yr = yr.contents[0][1:5]
+        yr = int(yr)
+        year = np.append(year,yr)
+
     # Get the movies' IMDB rating
-    mv_rt = soup.find_all('td',class_='ratingColumn imdbRating')
+    rating_list = soup.find_all('span',{'name':'ir'})
     imdbrating = np.array([],dtype='float')
-    for rt in mv_rt:
-        imdbrating = np.append(imdbrating,rt.strong.contents[0])
-    
-    col = ['Rank','Name','Year','IMDB Rating']
-    data = np.arange(250,4)
-    data[250,0] = rank
-    data[250,1] = name
-    data[250,2] = year
-    data[250,3] = imdbrating
-    mv_data = pd.DataFrame(data,columns=col)
-    return print(mv_data.head())
+    for rt in rating_list:
+        rt = float(rt['data-value'])
+        rt = round(rt, 3)
+        imdbrating = np.append(imdbrating,rt)
 
+    col = ['Title','Year','IMDB Rating']
 
-getContent("http://www.imdb.com/chart/top")
+    mv_data = np.array([title, year, imdbrating])
+    mv_data = pd.DataFrame(data=mv_data.T, index=rank,columns=col)
+    print(mv_data)
+    return None
+
+def main():
+    url = 'http://www.imdb.com/chart/top'
+    getContent(url)
+
+if __name__ == "__main__":
+    main()
