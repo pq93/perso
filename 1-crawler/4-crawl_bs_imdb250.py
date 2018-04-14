@@ -1,4 +1,4 @@
-# Get the movies' rank, title, year, IMDB rating and descriptionself.
+# Get the movies' rank, title, year, IMDB rating and summaryself.
 
 import requests
 import bs4
@@ -56,12 +56,30 @@ def getContent(url):
         rt = round(rt, 3)
         imdbrating = np.append(imdbrating,rt)
 
-    col = ['Title','Year','IMDB Rating']
+    # Get the movies' summary
+    url_list = soup.find_all('td',class_='titleColumn')
+    text = np.array([])
+    for url in url_list:
+        url = url.a['href']
+        url = str("http://www.imdb.com"+url)
+        txt = getSummary(url)
+        txt = unicode(txt).encode('utf-8')
+        txt = str(txt)
+        text = np.append(text,txt)
 
-    mv_data = np.array([title, year, imdbrating])
+    col = ['Title','Year','IMDB Rating','Summary']
+
+    mv_data = np.array([title, year, imdbrating, text])
     mv_data = pd.DataFrame(data=mv_data.T, index=rank,columns=col)
     print(mv_data)
     return None
+
+def getSummary(url):
+    html = getHtml(url)
+    soup = bs4.BeautifulSoup(html,'lxml')
+    summary = soup.find('div',class_='summary_text')
+    text = summary.contents[0][21:]
+    return text
 
 def main():
     url = 'http://www.imdb.com/chart/top'
