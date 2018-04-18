@@ -18,3 +18,13 @@ A **web crawler**, sometimes called a **spider**, is an Internet bot that system
 2. **Re-visit policy**: states when to check for changes to the pages
 3. **Politeness policy**: states how to avoid overloading websites
 4. **Parallelization policy**: states how to coordinate distributed web crawlers
+
+## 5. Framework of Scrapy
+
+![Framework of Scrapy](https://pic2.zhimg.com/80/v2-f9a34c578b7193f5772c26891d283c55_hd.jpg)
+
+1. **Spiders**: Parse web content, generate crawled objects and additional requests. It's the core of the project, which need to be implemented manually. ($\approx$ getContent)
+2. **Item pipelines**: Write the crawled data into text or database. It's the process of localization, which need to be implemented manually.
+3. **Downloader**: 
+4. **Scheduler**:
+5. **Engine**:
