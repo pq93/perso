@@ -25,6 +25,9 @@ A **web crawler**, sometimes called a **spider**, is an Internet bot that system
 
 1. **Spiders**: Parse web content, generate crawled objects and additional requests. It's the core of the project, which need to be implemented manually. (= getContent)
 2. **Item pipelines**: Write the crawled data into text or database. It's the process of localization, which need to be implemented manually.
-3. **Downloader**: (= getHtml)
-4. **Scheduler**:
-5. **Engine**:
+3. **Downloader**: Get web content. Prepared by Scrapy. (= getHtml)
+4. **Scheduler**: Manage all the requests with multi-thread and concurrent processing. Prepared by Scrapy.
+5. **Engine**: Control all the data flow exchange of all the modules, send correspondent event in different conditions.. It's the center of the framework and prepared by Scrapy too.
+
+Data flow of Scrapy
+![Dataflow](https://pic1.zhimg.com/80/v2-a882bb4ccab048a930252e272ff9da1d_hd.jpg)
