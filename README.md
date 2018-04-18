@@ -19,6 +19,7 @@ https://github.com/rq/rq
 2. 机器学习
 
 8个入门级趣味机器学习项目https://zhuanlan.zhihu.com/p/32119848
+
 3. 数据挖掘实战
   贝叶斯理论
   Airbnb与bilibili数据分析实战
