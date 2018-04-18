@@ -17,6 +17,7 @@ https://github.com/rq/rq
 用户画像标签 https://zhuanlan.zhihu.com/p/34804615?refer=pythoncrawl
 
 2. 机器学习
+
 8个入门级趣味机器学习项目https://zhuanlan.zhihu.com/p/32119848
 3. 数据挖掘实战
   贝叶斯理论
