@@ -23,8 +23,8 @@ A **web crawler**, sometimes called a **spider**, is an Internet bot that system
 
 ![Framework of Scrapy](https://pic2.zhimg.com/80/v2-f9a34c578b7193f5772c26891d283c55_hd.jpg)
 
-1. **Spiders**: Parse web content, generate crawled objects and additional requests. It's the core of the project, which need to be implemented manually. ($\approx$ getContent)
+1. **Spiders**: Parse web content, generate crawled objects and additional requests. It's the core of the project, which need to be implemented manually. (= getContent)
 2. **Item pipelines**: Write the crawled data into text or database. It's the process of localization, which need to be implemented manually.
-3. **Downloader**: 
+3. **Downloader**: (= getHtml)
 4. **Scheduler**:
 5. **Engine**:
