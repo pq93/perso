@@ -30,7 +30,7 @@ A **web crawler**, sometimes called a **spider**, is an Internet bot that system
 5. **Engine**: Control all the data flow exchange of all the modules, send correspondent event in different conditions.. It's the center of the framework and prepared by Scrapy too.
 
 ![Dataflow](https://pic1.zhimg.com/80/v2-a882bb4ccab048a930252e272ff9da1d_hd.jpg)
-#### Data flow of Scrapy
+#### Data flow of Scrapy:
 1. **Engine** gets a request from **Spider**.
 2. **Engine** transfers the request to **Scheduler**.
 3. **Engine** gets next request to be executed from **Scheduler**.
