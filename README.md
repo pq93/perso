@@ -16,14 +16,16 @@ https://github.com/rq/rq
 
 用户画像标签 https://zhuanlan.zhihu.com/p/34804615?refer=pythoncrawl
 
-2. 机器学习
+2. 机器学习Machine Learning
 
 8个入门级趣味机器学习项目https://zhuanlan.zhihu.com/p/32119848
 
-3. 数据挖掘实战
-  贝叶斯理论
-  Airbnb与bilibili数据分析实战
+3. 数据挖掘实战Data mining
 
-4. 深度学习
+    贝叶斯理论
+    Airbnb与bilibili数据分析实战
+
+4. 深度学习Deep learning
+
   深度学习网络与框架
   深度学习项目实战
