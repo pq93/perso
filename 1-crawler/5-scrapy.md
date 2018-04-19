@@ -1,4 +1,4 @@
-## 5. Framework of Scrapy
+## Framework of Scrapy
 
 ![Framework of Scrapy](https://pic2.zhimg.com/80/v2-f9a34c578b7193f5772c26891d283c55_hd.jpg)
 
