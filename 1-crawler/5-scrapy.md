@@ -58,5 +58,6 @@ class wfParisSpider(scrapy.Spider):
         start_urls.append("http://www.foreca.fr/France/"+city+"?tenday")
 
     def parse(self, response):
+        items = []
         
 ```
