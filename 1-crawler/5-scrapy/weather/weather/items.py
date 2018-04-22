@@ -13,8 +13,8 @@ class WeatherItem(scrapy.Item):
     # name = scrapy.Field()
     date = scrapy.Field()
     week = scrapy.Field()
-    img = scrapy.Field()
-    temperature = scrapy.Field()
+    t_max = scrapy.Field()
+    t_min = scrapy.Field()
     weather = scrapy.Field()
     wind = scrapy.Field()
     #pass
