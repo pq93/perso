@@ -30,7 +30,7 @@ scrapy genspider wfParis foreca.fr/France/Paris?tenday
 ###### 2. Edit items.py
 ```python
 import scrapy
-class weatherItem(scrapy.Item):
+class WeatherItem(scrapy.Item):
     # Define the fields for your item here like:
     # name = scrapy.Field()
     date = scrapy.Field()
@@ -43,7 +43,7 @@ class weatherItem(scrapy.Item):
 ###### 3. Edit spider
 ```python
 import scrapy
-from weather.items import weatherItem
+from Weather.items import weatherItem
 class wfParisSpider(scrapy.Spider):
     name = "wfParis"
     # Modify host, enable Scrapy to grab weather of other cities
@@ -59,5 +59,5 @@ class wfParisSpider(scrapy.Spider):
 
     def parse(self, response):
         items = []
-        
+
 ```
