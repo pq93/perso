@@ -60,3 +60,20 @@ class W2mysql(object):
         finally:
             connection.close()
         return item
+
+
+
+# CREATE TABLE movie(
+# id INT AUTO_INCREMENT,
+# rank INT,
+# title CHAR(255),
+# year INT,
+# imdbrating FLOAT,
+# PRIMARY KEY(id)
+# )ENGINE = InnoDB DEFAULT CHARSET = 'utf8';
+
+# DROP DATABASE imdb250;
+# DROP TABLE movie;
+# desc movie;
+# show columns from movie;
+# SELECT * FROM movie;
