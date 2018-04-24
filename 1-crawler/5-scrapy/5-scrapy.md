@@ -166,8 +166,10 @@ mysql -uroot -p
 ```sql
 -- Create database encoding with 'utf8', command ended with ';'
 CREATE DATABASE imdb250 CHARACTER SET 'utf8';
+
 -- Choose the database and work on it
 USE imdb250;
+
 -- Create table and its columns
 CREATE TABLE movie(
   id INT AUTO_INCREMENT,
@@ -177,12 +179,15 @@ CREATE TABLE movie(
   imdbrating FLOAT,
   PRIMARY KEY(id)
 ) ENGINE = InnoDB DEFAULT CHARSET='utf8';
+
 -- Visualize the table summary
 show columns from movie;
 -- Visualize the table summary
 desc movie;
+
 -- Show all contents of the table
 SELECT * FROM movie
+
 -- ******************************
 -- Delete table:
 -- DROP TABLE movie
