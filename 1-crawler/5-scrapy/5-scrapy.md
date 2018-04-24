@@ -189,16 +189,22 @@ SELECT * FROM movie
 -- Delete database:
 -- DROP DATABASE imdb250
 ```
-* 4.3.4 Edit pipeline code
+* 4.3.4 Install mysql model in python 3
+```shell
+pip3 install mysql
+```
+* 4.3.5 Edit pipeline code
 ```python
 class W2mysql(object):
-    # 
+    # Save the grabbed data to mysql
     def process_item(self, item, spider):
+        # Take out the data in item
         rank = item["rank"]
         title = str(item["title"])
         year = item["year"]
         imdbrating = item["imdbrating"]
 
+        # Build connection to local scrapy database
         connection = pymysql.connect(
             host = "localhost",
             user = "root",
@@ -209,10 +215,44 @@ class W2mysql(object):
 
         try:
             with connection.cursor() as cursor:
-                sql = """insert into movie(rank,title,year,imdbrating) VALUES (%s,%s,%s,%s)"""
+                # SQL command to create new values
+                sql = """INSERT INTO movie(rank,title,year,imdbrating) VALUES (%s,%s,%s,%s)"""
+                # Execute SQL command
                 cursor.execute(sql,(rank,title,year,imdbrating))
+            # Commit
             connection.commit()
         finally:
+            # Close connection
             connection.close()
+
         return item
 ```
+#### 5. Edit settings.py  
+Add a dict ITEM_PIPELINES, the numbers (300, 400, 500) can be customized. The smaller the number, the earlier the pipeline class will be executed.  
+```python
+BOT_NAME = 'movie'
+
+SPIDER_MODULES = ['movie.spiders']
+NEWSPIDER_MODULE = 'movie.spiders'
+
+ROBOTSTXT_OBEY = True
+
+ITEM_PIPELINES = {
+    'movie.pipelines.MoviePipeline': 300,
+    'movie.pipelines.W2json': 400,
+    'movie.pipelines.W2mysql': 500,
+}
+```
+
+#### 6. Run the scrapy project
+```shell
+scrapy crawl topIMDb
+```
+
+#### 7. Results
+###### 7.1 CSV  
+[Here: csv file](https://github.com/qpg93/personal/blob/master/1-crawler/5-scrapy/movie/data/movie.csv)  
+[Here: images](https://github.com/qpg93/personal/tree/master/1-crawler/5-scrapy/movie/data/img)  
+###### 7.2 JSON  
+[Here: json](https://github.com/qpg93/personal/blob/master/1-crawler/5-scrapy/movie/data/movie.json)  
+###### 7.3 MySQL  

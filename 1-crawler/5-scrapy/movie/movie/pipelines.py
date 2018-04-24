@@ -45,12 +45,15 @@ class W2json(object):
         return item
 
 class W2mysql(object):
+    # Save the grabbed data to mysql
     def process_item(self, item, spider):
+        # Take out the data in item
         rank = item["rank"]
         title = str(item["title"])
         year = item["year"]
         imdbrating = item["imdbrating"]
 
+        # Build connection to local scrapy database
         connection = pymysql.connect(
             host = "localhost",
             user = "root",
@@ -61,9 +64,14 @@ class W2mysql(object):
 
         try:
             with connection.cursor() as cursor:
-                sql = """insert into movie(rank,title,year,imdbrating) VALUES (%s,%s,%s,%s)"""
+                # SQL command to create new values
+                sql = """INSERT INTO movie(rank,title,year,imdbrating) VALUES (%s,%s,%s,%s)"""
+                # Execute SQL command
                 cursor.execute(sql,(rank,title,year,imdbrating))
+            # Commit
             connection.commit()
         finally:
+            # Close connection
             connection.close()
+
         return item
