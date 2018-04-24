@@ -256,3 +256,4 @@ scrapy crawl topIMDb
 ###### 7.2 JSON  
 [Here: json](https://github.com/qpg93/personal/blob/master/1-crawler/5-scrapy/movie/data/movie.json)  
 ###### 7.3 MySQL  
+![Show database](https://github.com/qpg93/personal/blob/master/1-crawler/5-scrapy/Result_mysqlscrapy.png)
