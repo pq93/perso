@@ -1,9 +1,8 @@
 # Scrapy application : weather forecast  
 
 ## 1. Object analysis  
-(http://www.foreca.fr/France/Paris)  
-http://www.foreca.fr/France/Paris?tenday  
-Object: one-week weather forecast of Paris  
+https://www.imdb.com/chart/top  
+Object: data of top 250 movies on IMDb  
 
 ## 2. Data screening  
 Data are wrapped in:
