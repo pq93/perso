@@ -32,7 +32,7 @@ class TopimdbSpider(scrapy.Spider):
             item["rank"] = int(item["rank"])
 
             # Be careful to encoding problems
-            item["title"] = movie.xpath('./td[@class="titleColumn"]/a//text()').extract()[0].encode("utf8")
+            item["title"] = movie.xpath('./td[@class="titleColumn"]/a//text()').extract()[0]
 
             # Get "(1998)" and slice the string to get "1998"
             item["year"] = movie.xpath('./td[@class="titleColumn"]/span//text()').extract()[0][1:5]

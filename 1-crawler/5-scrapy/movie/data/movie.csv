@@ -1,8 +1,8 @@
 1,The Shawshank Redemption,1994,9.217
-2,The Godfather,1972,9.16
+2,The Godfather,1972,9.159
 3,The Godfather: Part II,1974,8.995
 4,The Dark Knight,2008,8.955
-5,12 Angry Men,1957,8.909
+5,12 Angry Men,1957,8.908
 6,Schindler's List,1993,8.898
 7,The Lord of the Rings: The Return of the King,2003,8.868
 8,Pulp Fiction,1994,8.866
@@ -16,7 +16,7 @@
 16,One Flew Over the Cuckoo's Nest,1975,8.671
 17,Goodfellas,1990,8.662
 18,The Matrix,1999,8.649
-19,Seven Samurai,1954,8.633
+19,Seven Samurai,1954,8.632
 20,City of God,2002,8.608
 21,Star Wars: Episode IV - A New Hope,1977,8.608
 22,Se7en,1995,8.604
@@ -26,21 +26,22 @@
 26,The Usual Suspects,1995,8.553
 27,Spirited Away,2001,8.54
 28,Saving Private Ryan,1998,8.539
+29,Léon: The Professional,1994,8.539
 30,Interstellar,2014,8.508
 31,The Green Mile,1999,8.508
 32,American History X,1998,8.506
 33,Psycho,1960,8.503
-34,Once Upon a Time in the West,1968,8.503
+34,Once Upon a Time in the West,1968,8.502
 35,City Lights,1931,8.501
 36,Casablanca,1942,8.5
 37,Modern Times,1936,8.487
 38,The Intouchables,2011,8.487
-39,The Pianist,2002,8.482
+39,The Pianist,2002,8.481
 40,The Departed,2006,8.478
 41,Terminator 2,1991,8.476
 42,Raiders of the Lost Ark,1981,8.476
-43,Rear Window,1954,8.474
-44,Back to the Future,1985,8.474
+43,Back to the Future,1985,8.474
+44,Rear Window,1954,8.474
 45,Whiplash,2014,8.472
 46,Gladiator,2000,8.464
 47,The Lion King,1994,8.459
@@ -53,44 +54,46 @@
 54,Sunset Boulevard,1950,8.418
 55,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,8.416
 56,Grave of the Fireflies,1988,8.415
-57,The Lives of Others,2006,8.413
+57,The Lives of Others,2006,8.412
 58,Paths of Glory,1957,8.4
-59,The Shining,1980,8.393
+59,The Shining,1980,8.392
 60,Django Unchained,2012,8.392
-61,Coco,2017,8.391
+61,Coco,2017,8.39
+62,WALL·E,2008,8.376
 63,Princess Mononoke,1997,8.361
 64,American Beauty,1999,8.359
 65,The Dark Knight Rises,2012,8.356
-66,Witness for the Prosecution,1957,8.354
+66,Witness for the Prosecution,1957,8.353
 67,Old Boy,2003,8.353
-68,Aliens,1986,8.352
-69,Once Upon a Time in America,1984,8.349
+68,Aliens,1986,8.351
+69,Once Upon a Time in America,1984,8.348
 70,Das Boot,1981,8.336
-71,Citizen Kane,1941,8.333
+71,Citizen Kane,1941,8.332
 72,Vertigo,1958,8.322
-73,North by Northwest,1959,8.322
+73,North by Northwest,1959,8.321
 74,Braveheart,1995,8.319
 75,Reservoir Dogs,1992,8.315
 76,Star Wars: Episode VI - Return of the Jedi,1983,8.315
-77,M,1931,8.313
-78,Dangal,2016,8.311
+77,M,1931,8.312
+78,Dangal,2016,8.31
 79,Your Name,2016,8.309
 80,Requiem for a Dream,2000,8.301
 81,Amadeus,1984,8.295
 82,Like Stars on Earth,2007,8.294
-84,A Clockwork Orange,1971,8.292
-85,Lawrence of Arabia,1962,8.291
-86,Eternal Sunshine of the Spotless Mind,2004,8.29
+83,Amélie,2001,8.292
+84,A Clockwork Orange,1971,8.291
+85,Lawrence of Arabia,1962,8.29
+86,Eternal Sunshine of the Spotless Mind,2004,8.289
 87,Double Indemnity,1944,8.287
-88,Taxi Driver,1976,8.286
+88,Taxi Driver,1976,8.285
 89,Singin' in the Rain,1952,8.279
 90,2001: A Space Odyssey,1968,8.278
-91,3 Idiots,2009,8.278
-92,Toy Story,1995,8.278
+91,Toy Story,1995,8.278
+92,3 Idiots,2009,8.278
 93,To Kill a Mockingbird,1962,8.278
 94,Full Metal Jacket,1987,8.277
 95,Inglourious Basterds,2009,8.273
-96,Bicycle Thieves,1948,8.273
+96,Bicycle Thieves,1948,8.272
 97,The Sting,1973,8.272
 98,The Kid,1921,8.271
 99,Toy Story 3,2010,8.268
@@ -98,7 +101,7 @@
 101,Good Will Hunting,1997,8.258
 102,The Hunt,2012,8.257
 103,Monty Python and the Holy Grail,1975,8.255
-104,For a Few Dollars More,1965,8.25
+104,For a Few Dollars More,1965,8.249
 105,Scarface,1983,8.249
 106,L.A. Confidential,1997,8.248
 107,The Apartment,1960,8.245
@@ -108,26 +111,27 @@
 111,Indiana Jones and the Last Crusade,1989,8.235
 112,Up,2009,8.226
 113,Yojimbo,1961,8.224
-114,All About Eve,1950,8.224
+114,All About Eve,1950,8.223
 115,Batman Begins,2005,8.221
-116,Some Like It Hot,1959,8.219
+116,Some Like It Hot,1959,8.218
 117,Unforgiven,1992,8.214
 118,The Treasure of the Sierra Madre,1948,8.213
 119,Downfall,2004,8.211
+120,Mon père et mon fils,2005,8.21
 121,Die Hard,1988,8.206
 122,Heat,1995,8.206
-123,Raging Bull,1980,8.202
+123,Raging Bull,1980,8.201
 124,Ikiru,1952,8.196
-125,The Great Escape,1963,8.196
-126,The Third Man,1949,8.192
-127,Children of Heaven,1997,8.191
-128,Three Billboards Outside Ebbing, Missouri,2017,8.189
+125,The Great Escape,1963,8.195
+126,The Third Man,1949,8.191
+127,Children of Heaven,1997,8.19
+128,Three Billboards Outside Ebbing, Missouri,2017,8.188
 129,Chinatown,1974,8.188
 130,Pan's Labyrinth,2006,8.188
 131,Incendies,2010,8.187
 132,My Neighbor Totoro,1988,8.178
 133,Judgment at Nuremberg,1961,8.173
-134,Ran,1985,8.173
+134,Ran,1985,8.172
 135,The Secret in Their Eyes,2009,8.171
 136,The Gold Rush,1925,8.171
 137,Howl's Moving Castle,2004,8.17
@@ -136,10 +140,10 @@
 140,Inside Out,2015,8.16
 141,Lock, Stock and Two Smoking Barrels,1998,8.159
 142,The Seventh Seal,1957,8.158
-143,A Beautiful Mind,2001,8.158
+143,A Beautiful Mind,2001,8.157
 144,Casino,1995,8.156
 145,Room,2015,8.155
-146,Mr. Smith Goes to Washington,1939,8.151
+146,Mr. Smith Goes to Washington,1939,8.15
 147,The Elephant Man,1980,8.148
 148,The Wolf of Wall Street,2013,8.143
 149,V for Vendetta,2005,8.142
@@ -147,97 +151,100 @@
 151,Wild Strawberries,1957,8.138
 152,Warrior,2011,8.137
 153,The General,1926,8.137
-154,Sherlock Jr.,1924,8.135
+154,Sherlock Jr.,1924,8.134
 155,Dial M for Murder,1954,8.131
 156,Trainspotting,1996,8.131
 157,Gone with the Wind,1939,8.125
-158,Gran Torino,2008,8.124
-159,No Country for Old Men,2007,8.124
+158,No Country for Old Men,2007,8.124
+159,Gran Torino,2008,8.124
 160,The Sixth Sense,1999,8.123
 161,Fargo,1996,8.122
-162,The Deer Hunter,1978,8.121
-163,There Will Be Blood,2007,8.121
+162,There Will Be Blood,2007,8.121
+163,The Deer Hunter,1978,8.121
 164,The Thing,1982,8.12
 165,Finding Nemo,2003,8.117
 166,The Big Lebowski,1998,8.115
-167,Come and See,1985,8.111
+167,Come and See,1985,8.112
 168,Cool Hand Luke,1967,8.106
-169,Sunrise,1927,8.106
-170,Kill Bill: Vol. 1,2003,8.104
+169,Kill Bill: Vol. 1,2003,8.104
+170,Sunrise,1927,8.104
 171,Rebecca,1940,8.103
 172,Tokyo Story,1953,8.101
-173,The Bandit,1996,8.099
-174,Shutter Island,2010,8.099
+173,Shutter Island,2010,8.099
+174,The Bandit,1996,8.098
 175,Tu ne tueras point,2016,8.098
 176,How to Train Your Dragon,2010,8.096
 177,Mary et Max.,2009,8.096
-178,Gone Girl,2014,8.094
-179,Andrei Rublev,1966,8.09
+178,Gone Girl,2014,8.093
+179,Andrei Rublev,1966,8.088
 180,Into the Wild,2007,8.088
-181,Life of Brian,1979,8.088
+181,Life of Brian,1979,8.087
 182,Les nouveaux sauvages,2014,8.086
-183,Blade Runner 2049,2017,8.084
-184,It Happened One Night,1934,8.083
-185,Rang De Basanti,2006,8.083
-186,The Passion of Joan of Arc,1928,8.079
-187,Platoon,1986,8.078
+183,Blade Runner 2049,2017,8.083
+184,It Happened One Night,1934,8.082
+185,Rang De Basanti,2006,8.081
+186,Platoon,1986,8.078
+187,The Passion of Joan of Arc,1928,8.077
+188,Au nom du père,1993,8.077
 189,Network,1976,8.075
 190,Stand by Me,1986,8.075
-191,Hotel Rwanda,2004,8.075
+191,Hotel Rwanda,2004,8.074
 192,The Grand Budapest Hotel,2014,8.074
 193,The Wages of Fear,1953,8.073
-194,Stalker,1979,8.072
-195,Jurassic Park,1993,8.072
+194,Jurassic Park,1993,8.072
+195,Stalker,1979,8.072
 196,Ben-Hur,1959,8.071
 197,Rush,2013,8.07
 198,Persona,1966,8.07
-199,12 Years a Slave,2013,8.068
+199,12 Years a Slave,2013,8.067
 200,Memories of Murder,2003,8.067
 201,The Truman Show,1998,8.067
 202,Million Dollar Baby,2004,8.066
-203,The 400 Blows,1959,8.066
+203,The 400 Blows,1959,8.065
 204,Mad Max: Fury Road,2015,8.064
 205,Spotlight,2015,8.062
 206,Logan,2017,8.059
 207,Amores Perros,2000,8.058
 208,Before Sunrise,1995,8.057
 209,Hachi: A Dog's Tale,2009,8.055
-210,Butch Cassidy and the Sundance Kid,1969,8.054
+210,Butch Cassidy and the Sundance Kid,1969,8.053
 211,Prisoners,2013,8.051
 212,The Princess Bride,1987,8.05
+213,Nausicaä of the Valley of the Wind,1984,8.05
 214,La La Land,2016,8.047
 215,Catch Me If You Can,2002,8.043
 216,Harry Potter and the Deathly Hallows: Part 2,2011,8.041
-217,The Maltese Falcon,1941,8.041
-218,A Wednesday,2008,8.04
-219,Rocky,1976,8.038
+217,The Maltese Falcon,1941,8.04
+218,Rocky,1976,8.038
+219,A Wednesday,2008,8.038
 220,The Grapes of Wrath,1940,8.034
-221,The Nights of Cabiria,1957,8.034
+221,The Nights of Cabiria,1957,8.033
 222,Monsters, Inc.,2001,8.031
 223,Diabolique,1955,8.029
 224,Donnie Darko,2001,8.028
 225,Barry Lyndon,1975,8.028
-226,Paper Moon,1973,8.027
+226,Paper Moon,1973,8.026
 227,Gandhi,1982,8.026
 228,The Terminator,1984,8.023
-229,Touch of Evil,1958,8.023
+229,Touch of Evil,1958,8.022
 230,La Haine,1995,8.021
 231,Groundhog Day,1993,8.021
 232,The Wizard of Oz,1939,8.02
 233,Dead Poets Society,1989,8.017
 234,The Bourne Ultimatum,2007,8.017
 235,Annie Hall,1977,8.016
+236,8½,1963,8.015
 237,Jaws,1975,8.015
 238,In the Mood for Love,2000,8.014
 239,The Help,2011,8.013
 240,Paris, Texas,1984,8.012
 241,Infernal Affairs,2002,8.011
-242,The Best Years of Our Lives,1946,8.011
+242,The Best Years of Our Lives,1946,8.01
 243,Twelve Monkeys,1995,8.01
 244,Gangs of Wasseypur,2012,8.01
-245,Three Colors: Red,1994,8.01
-246,Before Sunset,2004,8.01
-247,Beauty and the Beast,1991,8.01
+245,Before Sunset,2004,8.01
+246,Beauty and the Beast,1991,8.01
+247,Three Colors: Red,1994,8.01
 248,Dog Day Afternoon,1975,8.01
-249,Akira,1988,8.009
-250,Tangerines,2013,8.009
+249,Tangerines,2013,8.009
+250,Akira,1988,8.009

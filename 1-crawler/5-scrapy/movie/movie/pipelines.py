@@ -18,9 +18,10 @@ class MoviePipeline(object):
         # Save the file under current directory
         filename = base_dir + "/data/movie.csv"
         # Open the file and add contents
-        with codecs.open(filename,'a', encoding="utf-8") as f:
+        with open(filename,'a') as f:
             f.write(str(item["rank"])+ \
-            ","+str(item["title"])+ \
+            # Keep unicode character in title
+            ","+str(item["title"].encode("utf-8"))+ \
             ","+str(item["year"])+ \
             ","+str(item["imdbrating"])+ \
             "\n")
@@ -38,7 +39,7 @@ class W2json(object):
         filename = base_dir + "/data/movie.json"
         # Open the json file and write with json.dumps()
         # Encode text into json and all strings are in unicode: ensure_ascii=False
-        with codecs.open(filename, 'a', encoding="utf-8") as f:
+        with codecs.open(filename, 'a',encoding="utf-8") as f:
             line = json.dumps(dict(item), ensure_ascii=False) + "\n"
             f.write(line)
 
@@ -49,7 +50,7 @@ class W2mysql(object):
     def process_item(self, item, spider):
         # Take out the data in item
         rank = item["rank"]
-        title = str(item["title"])
+        title = str(item["title"].encode("utf-8")) # Keep unicode character in title
         year = item["year"]
         imdbrating = item["imdbrating"]
 
