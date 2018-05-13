@@ -111,7 +111,36 @@ The hardest thing about choosing good names is that it requires good descriptive
     - ***if (employee.isEligibleForFullBenefits())***
 3. <span style="color:red">Good comments</span>
     - **Legal comments**: copyright and authorship statements are necessary and reasonable things to put into a comment at the start of each source file
-    > // Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.  
-    > // Released under the terms of the GNU General Public License version 2 or later.  
+    > *// Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.*  
+    > *// Released under the terms of the GNU General Public License version 2 or later.*  
 
     - Comments like this should not be contracts or legal tomes. Where possible, refer to a standard license or other external document rather than putting all the terms and conditions into the comment
+    - Sometimes it is just helpful to translate the meaning of some obscure argument or return value into something that’s readable. In general it is better to find a way to make that argument or return value clear in its own right; but when its part of the standard library, or in code that you cannot alter, then a helpful clarifying comment can be useful.
+    - **Warning of consequences**: sometimes it is useful to warn other programmers about certain consequences
+    > *// Don't run unless you have some time to kill.*
+
+    - Nowadays, we’d turn off the test case by using the **@Ignore** attribute with an appropriate explanatory string
+    > *@Ignore("Takes too long to run")*
+
+    - **Todo comments**: It is sometimes reasonable to leave “To do” notes in the form of ***//TODO*** comments.
+    - **TODO**s are jobs that the programmer thinks should be done, but for some reason can’t do at the moment. It might be a reminder to delete a deprecated feature or a plea for someone else to look at a problem. It might be a request for someone else to think of a better name or a reminder to make a change that is dependent on a planned event. Whatever else a TODO might be, it is ***NOT*** an excuse to leave bad code in the system.
+    - Amplification: a comment may be used to amplify the importance of something that may otherwise seem inconsequential
+4. <span style="color:red">Bad comments</span>
+Usually bad comments are crutches or excuses for poor code or justifications for insufficient decisions, amounting to little more than the programmer talking to himself.
+    - **Mumbling**: Plopping in a comment just because you feel you should or because the process requires it, is a hack. Any comment that forces you to look in another module for the meaning of that comment has failed to communicate to you and is not worth the bits it consumes.
+    - **Redundant comments**
+    - **Misleading comments**
+    - **Mandated comments**: It is just plain silly to have a rule that says that every function must have a javadoc, or every variable must have a comment
+    - **Journal comments**
+    - **Noise comments**
+    > /\*\* The day of the month.\*/
+    > private int dayOfMonth;
+
+    - **Don't use a comment when you can use a function or a variable**
+    - **Position markers**: A banner is startling and obvious if you don't see banners very often. So use them very sparingly, and only when the benefit is significant
+    - **Closing brace comments**: Although this might make sense for long functions with deeply nested structures, it serves only to clutter the kind of small and encapsulated functions that we prefer. If you find yourself wanting to mark your closing braces, try to shorten your functions instead
+    - **Attributions and bylines**: Source code control systems are very good at remembering who added what, when. No need to pollute the code with little bylines
+    - **Commented-out code**: Few practices are as odious as commenting-out code
+    - **Nonlocal information**: If you must write a comment, then make sure it describes the code it appears near. Don’t offer system-wide information in the context of a local comment.
+    - **Too much information**: Don’t put interesting historical discussions or irrelevant descriptions of details into your comments.
+    - **Inobvious connection**
