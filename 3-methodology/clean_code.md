@@ -133,7 +133,7 @@ Usually bad comments are crutches or excuses for poor code or justifications for
     - **Mandated comments**: It is just plain silly to have a rule that says that every function must have a javadoc, or every variable must have a comment
     - **Journal comments**
     - **Noise comments**
-    > /\*\* The day of the month.\*/
+    > /\*\* The day of the month.\*/  
     > private int dayOfMonth;
 
     - **Don't use a comment when you can use a function or a variable**
@@ -144,3 +144,4 @@ Usually bad comments are crutches or excuses for poor code or justifications for
     - **Nonlocal information**: If you must write a comment, then make sure it describes the code it appears near. Don’t offer system-wide information in the context of a local comment.
     - **Too much information**: Don’t put interesting historical discussions or irrelevant descriptions of details into your comments.
     - **Inobvious connection**
+## 4. Formatting
