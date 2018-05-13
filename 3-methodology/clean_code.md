@@ -6,6 +6,7 @@ Reading notes of the book [Clean Code: *A Handbook of Agile Software Craftsmansh
 2. [Functions](#functions)
 3. [Comments](#comments)
 4. [Formatting](#formatting)
+5. [Objects and data structures](#objects-and-data-structures)
 
 ## Meaningful names
 The hardest thing about choosing good names is that it requires good descriptive skills and a shared cultural background.  
@@ -151,3 +152,53 @@ Usually bad comments are crutches or excuses for poor code or justifications for
     - **Too much information**: Don’t put interesting historical discussions or irrelevant descriptions of details into your comments.
     - **Inobvious connection**
 ## Formatting
+You should take care that your code is nicely formatted. You should choose a set of simple rules that govern the format of your code, and then you should consistently apply those rules. If you are working on a team, then the team should agree to a single set of formatting rules and all members should comply. It helps to have an automated tool that can apply those formatting rules for you.  
+1. <span style="color:red">The purpose of formatting</span>
+The functionality that you create today has a good chance of changing in the next release, but the readability of your code will have a profound effect on all the changes that will ever be made. The coding style and readability set precedents that continue to affect maintainability and extensibility long after the original code has been changed beyond recognition. Your style and discipline survives, even though your code does not.
+2. <span style="color:red">Vertical formatting</span>
+    - The newspaper metaphor
+        - The name should be simple but explanatory. The name, by itself, should be sufficient to tell us whether we are in the right module or not. The topmost parts of the source file should provide the high-level concepts and algorithms. Detail should increase as we move downward, until at the end we find the lowest level functions and details in the source file
+    - Vertical distance
+        - Concepts that are closely related should be kept vertically close to each other
+        - Closely related concepts should not be separated into different files. Indeed, this is one of the reasons that protected variables should be avoided
+        - Variables should be declared as close to their usage as possible
+    - Vertical ordering
+        - A function that is called should be below a function that does the calling
+3. <span style="color:red">Horizontal formatting</span>
+    - **Line width**: 20~60
+    - Never have to scroll to the right
+    - Use horizontal white space to associate things that are strongly related and disassociate things that are more weakly related
+        - Surround the assignment operators with white space to accentuate them
+        - Don't put spaces between the function names and the opening parenthesis
+        - Separate arguments within the function call parenthesis to accentuate the comma and show that the arguments are separate
+        - Another use for white space is to accentuate the precedence of operators
+        > return (-b + Math.sqrt(determinant)) / (2*a);
+
+        - The factors have no white space between them because they are high precedence. The terms are separated by white space because addition and subtraction are lower precedence
+4. <span style="color:red">Horizontal alignment</span>
+    - The alignment seems to emphasize the wrong things and leads my eye away from the true intent
+    - Indentation
+        - Statements at the level of the file, such as most class declarations, are not indented at all
+        - Methods within a class are indented one level to the right of the class
+        - Implementations of those methods are implemented one level to the right of the method declaration
+        - Block implementations are implemented one level to the right of their containing block
+    - Dummy scopes
+    > while (dis.read(buf, 0, readBufferSize) != -1)  
+    > &nbsp;&nbsp;&nbsp;&nbsp;;  
+
+6. <span style="color:red">Team rules</span>
+    - Every programmer has his own favorite formatting rules, but if he works in a team, then the team rules
+## Objects and data structures
+1. <span style="color:red">Data abstraction</span>
+    - Hide implementation
+        - A class does not simply push its variables out through getters and setters. Rather it exposes abstract interfaces that allow its users to manipulate the ***essence*** of the data, without having to know its implementation
+    > public interface Point {
+    > &nbsp;&nbsp;&nbsp;&nbsp;double getX();
+    > &nbsp;&nbsp;&nbsp;&nbsp;double getY();
+    > &nbsp;&nbsp;&nbsp;&nbsp;void setCartesian(double x, double y);
+    > &nbsp;&nbsp;&nbsp;&nbsp;double getR();
+    > &nbsp;&nbsp;&nbsp;&nbsp;double getTheta();
+    > &nbsp;&nbsp;&nbsp;&nbsp;void setPolar(double r, double theta);
+    > }
+
+    - d
