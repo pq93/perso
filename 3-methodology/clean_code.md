@@ -111,7 +111,7 @@ The hardest thing about choosing good names is that it requires good descriptive
     - ***if (employee.isEligibleForFullBenefits())***
 3. <span style="color:red">Good comments</span>
     - **Legal comments**: copyright and authorship statements are necessary and reasonable things to put into a comment at the start of each source file
-> // Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.  
-> // Released under the terms of the GNU General Public License version 2 or later.
+    > // Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.  
+    > // Released under the terms of the GNU General Public License version 2 or later.  
 
     - Comments like this should not be contracts or legal tomes. Where possible, refer to a standard license or other external document rather than putting all the terms and conditions into the comment
