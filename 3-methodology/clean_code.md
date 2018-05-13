@@ -1,7 +1,13 @@
 # Clean Code  
 Reading notes of the book [Clean Code: *A Handbook of Agile Software Craftsmanship*](https://www.amazon.fr/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&qid=1526202029&sr=8-1&keywords=clean+code+a+handbook+of+agile+software+craftsmanship) by Robert C. Martin  
 [Online PDF](https://www.investigatii.md/uploads/resurse/Clean_Code.pdf)
-## 1. Meaningful names
+## Table of contents
+1. [Meaningful names](#meaningful-names)
+2. [Functions](#functions)
+3. [Comments](#comments)
+4. [Formatting](#formatting)
+
+## Meaningful names
 The hardest thing about choosing good names is that it requires good descriptive skills and a shared cultural background.  
 1. <span style="color:red">Use intention-revealing names</span>
     - Take care with your names and change them when you find better ones  
@@ -55,7 +61,7 @@ The hardest thing about choosing good names is that it requires good descriptive
     - We may add context by using prefixes: ***addrFirstName***, ***addrLastName***, ***addrState***, and so on
 16. <span style="color:red">Don't add gratuitous context</span>
     - The names ***accountAddress*** and ***customerAddress*** are fine names for instances of the class ***Address*** but could be poor names for classes  
-## 2. Functions
+## Functions
 1. <span style="color:red">Small</span>
     - Functions should be small
     - Blocks and indenting
@@ -101,7 +107,7 @@ The hardest thing about choosing good names is that it requires good descriptive
     - When I write functions, they come out long and complicated. They have lots of indenting and nested loops. They have long argument lists. The names are arbitrary, and there is duplicated code. But I also have a suite of unit tests that cover every one of those clumsy lines of code
     - Then I massage and refine that code, splitting out functions, changing names, eliminating duplication. I shrink the methods and reorder them. Sometimes I break out whole classes, all the while keeping the tests passing
     - In the end, I wind up with functions that follow the rules I've laid down in this chapter
-## 3. Comments
+## Comments
 - The proper use of comments is to compensate for our failure to express ourself in code.  
 - Comments lie. Not always, and not intentionally, but too often. The older a comment is, and the farther away it is from the code it describes, the more likely it is to be just plain wrong. The reason is simple. Programmers can’t realistically maintain them.  
 - Truth can only be found in one place: the code. Only the code can truly tell you what it does. It is the only source of truly accurate information. Therefore, though comments are sometimes necessary, we will expend significant energy to minimize them.
@@ -144,4 +150,4 @@ Usually bad comments are crutches or excuses for poor code or justifications for
     - **Nonlocal information**: If you must write a comment, then make sure it describes the code it appears near. Don’t offer system-wide information in the context of a local comment.
     - **Too much information**: Don’t put interesting historical discussions or irrelevant descriptions of details into your comments.
     - **Inobvious connection**
-## 4. Formatting
+## Formatting
