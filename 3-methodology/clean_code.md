@@ -1,5 +1,6 @@
 # Clean Code  
-Reading notes of the book [Clean Code: *A Handbook of Agile Software Craftsmanship*](https://www.investigatii.md/uploads/resurse/Clean_Code.pdf) by Robert C. Martin  
+Reading notes of the book [Clean Code: *A Handbook of Agile Software Craftsmanship*](https://www.amazon.fr/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&qid=1526202029&sr=8-1&keywords=clean+code+a+handbook+of+agile+software+craftsmanship) by Robert C. Martin  
+[Online PDF](https://www.investigatii.md/uploads/resurse/Clean_Code.pdf)
 ## 1. Meaningful names
 The hardest thing about choosing good names is that it requires good descriptive skills and a shared cultural background.  
 1. <span style="color:red">Use intention-revealing names</span>
@@ -100,8 +101,17 @@ The hardest thing about choosing good names is that it requires good descriptive
     - When I write functions, they come out long and complicated. They have lots of indenting and nested loops. They have long argument lists. The names are arbitrary, and there is duplicated code. But I also have a suite of unit tests that cover every one of those clumsy lines of code
     - Then I massage and refine that code, splitting out functions, changing names, eliminating duplication. I shrink the methods and reorder them. Sometimes I break out whole classes, all the while keeping the tests passing
     - In the end, I wind up with functions that follow the rules I've laid down in this chapter
-## 2. Comments
+## 3. Comments
 - The proper use of comments is to compensate for our failure to express ourself in code.  
 - Comments lie. Not always, and not intentionally, but too often. The older a comment is, and the farther away it is from the code it describes, the more likely it is to be just plain wrong. The reason is simple. Programmers can’t realistically maintain them.  
 - Truth can only be found in one place: the code. Only the code can truly tell you what it does. It is the only source of truly accurate information. Therefore, though comments are sometimes necessary, we will expend significant energy to minimize them.
-1. <span style="color:red"></span>
+1. <span style="color:red">Comments do not make up for bad code</span>
+    - Clear and expressive code with few comments is far superior to cluttered and complex code with lots of comments. Rather than spend your time writing the comments that explain the mess you’ve made, spend it cleaning that mess
+2. <span style="color:red">Explain yourself in code</span>
+    - ***if (employee.isEligibleForFullBenefits())***
+3. <span style="color:red">Good comments</span>
+    - **Legal comments**: copyright and authorship statements are necessary and reasonable things to put into a comment at the start of each source file
+> // Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.
+> // Released under the terms of the GNU General Public License version 2 or later.
+
+    - Comments like this should not be contracts or legal tomes. Where possible, refer to a standard license or other external document rather than putting all the terms and conditions into the comment
