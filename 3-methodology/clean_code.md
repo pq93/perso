@@ -192,13 +192,13 @@ The functionality that you create today has a good chance of changing in the nex
 1. <span style="color:red">Data abstraction</span>
     - Hide implementation
         - A class does not simply push its variables out through getters and setters. Rather it exposes abstract interfaces that allow its users to manipulate the ***essence*** of the data, without having to know its implementation
-    > public interface Point {
-    > &nbsp;&nbsp;&nbsp;&nbsp;double getX();
-    > &nbsp;&nbsp;&nbsp;&nbsp;double getY();
-    > &nbsp;&nbsp;&nbsp;&nbsp;void setCartesian(double x, double y);
-    > &nbsp;&nbsp;&nbsp;&nbsp;double getR();
-    > &nbsp;&nbsp;&nbsp;&nbsp;double getTheta();
-    > &nbsp;&nbsp;&nbsp;&nbsp;void setPolar(double r, double theta);
+    > public interface Point {  
+    > &nbsp;&nbsp;&nbsp;&nbsp;double getX();  
+    > &nbsp;&nbsp;&nbsp;&nbsp;double getY();  
+    > &nbsp;&nbsp;&nbsp;&nbsp;void setCartesian(double x, double y);  
+    > &nbsp;&nbsp;&nbsp;&nbsp;double getR();  
+    > &nbsp;&nbsp;&nbsp;&nbsp;double getTheta();  
+    > &nbsp;&nbsp;&nbsp;&nbsp;void setPolar(double r, double theta);  
     > }
 
     - d
