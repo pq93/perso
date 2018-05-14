@@ -118,17 +118,20 @@ The hardest thing about choosing good names is that it requires good descriptive
     - ***if (employee.isEligibleForFullBenefits())***
 3. <span style="color:red">Good comments</span>
     - **Legal comments**: copyright and authorship statements are necessary and reasonable things to put into a comment at the start of each source file
-    > *// Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.*  
-    > *// Released under the terms of the GNU General Public License version 2 or later.*  
-
+    ```python
+    # Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.
+    # Released under the terms of the GNU General Public License version 2 or later.
+    ```
     - Comments like this should not be contracts or legal tomes. Where possible, refer to a standard license or other external document rather than putting all the terms and conditions into the comment
     - Sometimes it is just helpful to translate the meaning of some obscure argument or return value into something that’s readable. In general it is better to find a way to make that argument or return value clear in its own right; but when its part of the standard library, or in code that you cannot alter, then a helpful clarifying comment can be useful.
     - **Warning of consequences**: sometimes it is useful to warn other programmers about certain consequences
-    > *// Don't run unless you have some time to kill.*
-
+    ```python
+    # Don't run unless you have some time to kill.
+    ```
     - Nowadays, we’d turn off the test case by using the **@Ignore** attribute with an appropriate explanatory string
-    > *@Ignore("Takes too long to run")*
-
+    ```java
+    @Ignore("Takes too long to run")
+    ```
     - **Todo comments**: It is sometimes reasonable to leave “To do” notes in the form of ***//TODO*** comments.
     - **TODO**s are jobs that the programmer thinks should be done, but for some reason can’t do at the moment. It might be a reminder to delete a deprecated feature or a plea for someone else to look at a problem. It might be a request for someone else to think of a better name or a reminder to make a change that is dependent on a planned event. Whatever else a TODO might be, it is ***NOT*** an excuse to leave bad code in the system.
     - Amplification: a comment may be used to amplify the importance of something that may otherwise seem inconsequential
@@ -140,9 +143,10 @@ Usually bad comments are crutches or excuses for poor code or justifications for
     - **Mandated comments**: It is just plain silly to have a rule that says that every function must have a javadoc, or every variable must have a comment
     - **Journal comments**
     - **Noise comments**
-    > /\*\* The day of the month.\*/  
-    > private int dayOfMonth;
-
+    ```java
+    /** The day of the month. */
+    private int dayOfMonth;
+    ```
     - **Don't use a comment when you can use a function or a variable**
     - **Position markers**: A banner is startling and obvious if you don't see banners very often. So use them very sparingly, and only when the benefit is significant
     - **Closing brace comments**: Although this might make sense for long functions with deeply nested structures, it serves only to clutter the kind of small and encapsulated functions that we prefer. If you find yourself wanting to mark your closing braces, try to shorten your functions instead
@@ -172,8 +176,9 @@ The functionality that you create today has a good chance of changing in the nex
         - Don't put spaces between the function names and the opening parenthesis
         - Separate arguments within the function call parenthesis to accentuate the comma and show that the arguments are separate
         - Another use for white space is to accentuate the precedence of operators
-        > return (-b + Math.sqrt(determinant)) / (2*a);
-
+        ```java
+        return (-b + Math.sqrt(determinant)) / (2*a);
+        ```
         - The factors have no white space between them because they are high precedence. The terms are separated by white space because addition and subtraction are lower precedence
 4. <span style="color:red">Horizontal alignment</span>
     - The alignment seems to emphasize the wrong things and leads my eye away from the true intent
@@ -183,22 +188,25 @@ The functionality that you create today has a good chance of changing in the nex
         - Implementations of those methods are implemented one level to the right of the method declaration
         - Block implementations are implemented one level to the right of their containing block
     - Dummy scopes
-    > while (dis.read(buf, 0, readBufferSize) != -1)  
-    > &nbsp;&nbsp;&nbsp;&nbsp;;  
-
+    ```java
+    while (dis.read(buf, 0, readBufferSize) != -1)
+        ;
+    ```
 6. <span style="color:red">Team rules</span>
     - Every programmer has his own favorite formatting rules, but if he works in a team, then the team rules
 ## Objects and data structures
 1. <span style="color:red">Data abstraction</span>
     - Hide implementation
         - A class does not simply push its variables out through getters and setters. Rather it exposes abstract interfaces that allow its users to manipulate the ***essence*** of the data, without having to know its implementation
-    > public interface Point {  
-    > &nbsp;&nbsp;&nbsp;&nbsp;double getX();  
-    > &nbsp;&nbsp;&nbsp;&nbsp;double getY();  
-    > &nbsp;&nbsp;&nbsp;&nbsp;void setCartesian(double x, double y);  
-    > &nbsp;&nbsp;&nbsp;&nbsp;double getR();  
-    > &nbsp;&nbsp;&nbsp;&nbsp;double getTheta();  
-    > &nbsp;&nbsp;&nbsp;&nbsp;void setPolar(double r, double theta);  
-    > }
+    ```java
+    public interface Point {
+        double getX();
+        double getY();
+        void setCartesian(double x, double y);
+        double getR();
+        double getTheta();
+        void setPolar(double r, double theta);
+    }
+    ```
 
     - d
