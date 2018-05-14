@@ -115,7 +115,9 @@ The hardest thing about choosing good names is that it requires good descriptive
 1. <span style="color:red">Comments do not make up for bad code</span>
     - Clear and expressive code with few comments is far superior to cluttered and complex code with lots of comments. Rather than spend your time writing the comments that explain the mess you’ve made, spend it cleaning that mess
 2. <span style="color:red">Explain yourself in code</span>
-    - ***if (employee.isEligibleForFullBenefits())***
+    ```java
+    if (employee.isEligibleForFullBenefits())
+    ```
 3. <span style="color:red">Good comments</span>
     - **Legal comments**: copyright and authorship statements are necessary and reasonable things to put into a comment at the start of each source file
     ```python
