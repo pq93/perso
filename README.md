@@ -19,6 +19,9 @@ https://github.com/rq/rq
 2. 算法导论  
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/lecture-notes/
 
+3. 数据分析
+词义分析 https://zhuanlan.zhihu.com/p/36830594
+
 3. 机器学习Machine Learning
 
 8个入门级趣味机器学习项目https://zhuanlan.zhihu.com/p/32119848
