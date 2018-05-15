@@ -5,7 +5,7 @@
     2. [Basics of Requests](https://github.com/qpg93/personal/blob/master/1-crawler/2-requests.py)
     3. [Basics of BeautifulSoup](https://github.com/qpg93/personal/blob/master/1-crawler/3-beautifulsoup.py)
     4. [Web Crawling of IMDb Top 250 by BeautifulSoup](https://github.com/qpg93/personal/blob/master/1-crawler/4-beautifulsoup/imdb250.py)
-    5. [**Web Crawling of IMDb Top 250 by Scrapy**](https://github.com/qpg93/personal/blob/master/1-crawler/5-scrapy/README.md)
+    5. [Web Crawling of IMDb Top 250 by Scrapy](https://github.com/qpg93/personal/blob/master/1-crawler/5-scrapy/README.md)
 2. Statistics
 3. Methodology
     - [Clean Code](https://github.com/qpg93/personal/blob/master/3-methodology/clean_code.md)
