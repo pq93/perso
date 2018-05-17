@@ -1,5 +1,5 @@
 # Clean Code  
-Reading notes of the book [Clean Code: *A Handbook of Agile Software Craftsmanship*](https://www.amazon.fr/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&qid=1526202029&sr=8-1&keywords=clean+code+a+handbook+of+agile+software+craftsmanship) by Robert C. Martin ([Online PDF](https://www.investigatii.md/uploads/resurse/Clean_Code.pdf))
+This is my reading note of [Clean Code: *A Handbook of Agile Software Craftsmanship*](https://www.amazon.fr/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&qid=1526202029&sr=8-1&keywords=clean+code+a+handbook+of+agile+software+craftsmanship) by Robert C. Martin ([Online PDF](https://www.investigatii.md/uploads/resurse/Clean_Code.pdf))
 ## Table of contents
 1. [Meaningful names](#meaningful-names)
 2. [Functions](#functions)
