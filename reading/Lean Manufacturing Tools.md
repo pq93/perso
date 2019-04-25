@@ -10,12 +10,20 @@ Les gaspillages sont au nombre de sept : surproduction, attentes, transport, ét
 Formalisée aux Etats-Unis dans les années 1990, adaptable à tous les secteurs économiques le *lean* est actuellement implanté principalement dans l'industrie et surtout l'industrie automobile.
 
 # Les outils du lean
-#### 1. Les 5 WHYS
-Définition
-Cet outil permet de **remonter à la cause racine** d'un problème en se posant plusieurs fois la question **Pourquoi ?**
+## 1. Les 5 WHYS
+#### Définition
+Cet outil permet de **remonter à la cause racine** d'un problème en se posant plusieurs fois la question **Pourquoi ?**.
+#### Intérêts
+* Ne pas se contenter des **premiers problèmes** soulevés. La plupart du temps, ce **ne sont que des symptômes**.
+* En remontant à la cause **racine**, la solution sera plus facile à corriger et **plus efficace** dans le temps.
+#### Méthodologie
+1. Aller sur le terrain pour identifier le problème
+2. Réunir l'équipe
+3. Dérouler les 5 whys
+4. Rechercher les actions correctives et préventives
+5. Déployer la solution aux autres secteurs quand c'est possible
+![alt text](1_les5whys.png "Example")
 
-Intérêts
-* Ne pas se 
-
-Méthodologie
-LKSDjfljsdlflkjdsjf
+## 2. Le temple du lean
+#### Définition
+Cet outil symbolise les **principles essentiels pour bâtir une structure solide et efficace**.
