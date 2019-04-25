@@ -22,6 +22,7 @@ Cet outil permet de **remonter à la cause racine** d'un problème en se posant 
 3. Dérouler les 5 whys
 4. Rechercher les actions correctives et préventives
 5. Déployer la solution aux autres secteurs quand c'est possible
+
 ![alt text](1_les5whys.png "Example")
 
 ## 2. Le temple du lean
