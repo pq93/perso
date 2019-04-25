@@ -10,7 +10,7 @@ Les gaspillages sont au nombre de sept : surproduction, attentes, transport, ét
 Formalisée aux Etats-Unis dans les années 1990, adaptable à tous les secteurs économiques le *lean* est actuellement implanté principalement dans l'industrie et surtout l'industrie automobile.
 
 # Les outils du lean
-## 1. Les 5 WHYS
+## 1. Les 5 whys
 #### Définition
 Cet outil permet de **remonter à la cause racine** d'un problème en se posant plusieurs fois la question **Pourquoi ?**.
 #### Intérêts
