@@ -28,3 +28,6 @@ Cet outil permet de **remonter à la cause racine** d'un problème en se posant 
 ## 2. Le temple du lean
 #### Définition
 Cet outil symbolise les **principles essentiels pour bâtir une structure solide et efficace**.
+
+
+测试测试
